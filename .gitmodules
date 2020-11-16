@@ -1,6 +1,6 @@
-[submodule "comparisons/DeepWarp"]
-	path = comparisons/DeepWarp
+[submodule "comparison/DeepWarp"]
+	path = comparison/DeepWarp
 	url = https://github.com/BlueWinters/DeepWarp
-[submodule "comparisons/gaze_redirection"]
-	path = comparisons/gaze_redirection
+[submodule "comparison/gaze_redirection"]
+	path = comparison/gaze_redirection
 	url = https://github.com/HzDmS/gaze_redirection
