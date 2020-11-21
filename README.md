@@ -9,6 +9,8 @@ Contact: weihaox@outlook.com
 
 In this work, we present a novel method that works on both precise redirection and continuous interpolation. With the well-disentangled and hierarchically-organized latent space, we can adjust the order and strength of each attribute by altering the additional control vector. Furthermore, we contribute a high-quality gaze dataset, which contains a large range of gaze directions, to benefit researchers in related areas. 
 
+This is a reproduction (my account was deleted after my graduation) and may be slightly different from the original implementaion. f you found any problems including codes and processed data, please feel free to [pull requests](https://github.com/weihaox/InterpGaze/pulls) or [open issues](https://github.com/weihaox/InterpGaze/issues/new).
+
 <details>
   <summary> Dependencies (click to expand) </summary>
 
@@ -35,7 +37,7 @@ In this work, we present a novel method that works on both precise redirection a
 
 ## Dataset
 
-We contribute a high-quality gaze dataset, which contains a large range of gaze directions and diversity on eye shapes, glasses, ages and genders, to benefit researchers in related areas. Samples are shown in the following pictures.
+We contribute a high-quality gaze dataset, which contains a large range of gaze directions and diversity on eye shapes, glasses, ages and genders, to benefit researchers in related areas. We released the processed gaze patches on [Google Drive](https://drive.google.com/drive/folders/1ZZRcLiBPtfkohSlTHw7TE3CnntuFxoDT). Samples are shown in the following pictures.
 
 <p align="center">
 <img src="/asserts/examples/_MG_0568.jpg" width="150" height="100" /> &ensp; <img src="/asserts/examples/_MG_0569.jpg" width="150" height="100" /> &ensp; <img src="/asserts/examples/_MG_0570.jpg" width="150" height="100" /> 
@@ -51,7 +53,7 @@ The comparison of some popular gaze datasets is shown in the following table.
 
 For fair comparison, we also train our model with the same dataset as in [He et. al.](https://github.com/HzDmS/gaze_redirection), which contains eye patch images parsed from [Columbia Gaze Dataset](http://www.cs.columbia.edu/~brian/projects/columbia_gaze.html). The dataset contains six subfolders, N30P/, N15P/, 0P/, P15P/, P30P/ and all/. Prefix 'N' means negative head pose, and 'P' means positive head pose. Folder all/ contains all eye patch images with different head poses.
 
-You can directly download the dataset processed by [HzDmS](https://github.com/HzDmS) via this [link](https://drive.google.com/file/d/1tE3QfFjxtRco4ruLZwYyUhjyYSp2QIJL/view?usp=sharing) or use our provided scripts [here](https://github.com/xiaweihao/InterpGaze/blob/master/tools/crop_eye.py)， which is in keeping with their paper.
+You can directly download the dataset processed by [HzDmS](https://github.com/HzDmS) via this [link](https://drive.google.com/file/d/1tE3QfFjxtRco4ruLZwYyUhjyYSp2QIJL/view?usp=sharing) or use our provided scripts in the [repo](https://github.com/xiaweihao/InterpGaze/blob/master/tools/crop_eye.py) or on [Colab](https://colab.research.google.com/drive/119PGxpMFZPPKkA8rJGdksURTZgBUNHcj?usp=sharing), which is in keeping with their paper.
 
 "We first run face alignment with dlib by parsing the face with 68 facial landmark points. After that, a minimal enclosed circle with center(x, y) and radius R was extracted from the 6 landmark points of each eye. The cropping region of the eye patch is set as a square box with center (x, y) and side length 3.4R. We flipped the right eye images horizontally to align with the left eye images. All eye patch images were resized to 64 × 64."
 
