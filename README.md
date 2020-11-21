@@ -1,5 +1,5 @@
 # Controllable Continuous Gaze Redirection
-[![Paper](http://img.shields.io/badge/paper-arxiv.2010.04513-1bb3b3.svg)](https://arxiv.org/abs/2010.04513)
+[![Paper](http://img.shields.io/badge/paper-arxiv.2010.04513-blue.svg)](https://arxiv.org/abs/2010.04513)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/made%20with-python-blue.svg?style=flat-square)](https://www.python.org/)
 
@@ -9,7 +9,7 @@ Contact: weihaox@outlook.com
 
 In this work, we present a novel method that works on both precise redirection and continuous interpolation. With the well-disentangled and hierarchically-organized latent space, we can adjust the order and strength of each attribute by altering the additional control vector. Furthermore, we contribute a high-quality gaze dataset, which contains a large range of gaze directions, to benefit researchers in related areas. 
 
-This is a reproduction (my account was deleted after my graduation) and may be slightly different from the original implementaion. f you found any problems including codes and processed data, please feel free to [pull requests](https://github.com/weihaox/InterpGaze/pulls) or [open issues](https://github.com/weihaox/InterpGaze/issues/new).
+This is a reproduction and may be slightly different from the original implementaion. If you found any problems including codes and processed data, please feel free to [pull requests](https://github.com/weihaox/InterpGaze/pulls) or [open issues](https://github.com/weihaox/InterpGaze/issues/new).
 
 <details>
   <summary> Dependencies (click to expand) </summary>
@@ -37,7 +37,7 @@ This is a reproduction (my account was deleted after my graduation) and may be s
 
 ## Dataset
 
-We contribute a high-quality gaze dataset, which contains a large range of gaze directions and diversity on eye shapes, glasses, ages and genders, to benefit researchers in related areas. We released the processed gaze patches on [Google Drive](https://drive.google.com/drive/folders/1ZZRcLiBPtfkohSlTHw7TE3CnntuFxoDT). Samples are shown in the following pictures.
+We contribute a high-quality gaze dataset, which contains a large range of gaze directions and diversity on eye shapes, glasses, ages and genders, to benefit researchers in related areas. Samples are shown in the following pictures. We released the processed gaze patches on [Google Drive](https://drive.google.com/drive/folders/1ZZRcLiBPtfkohSlTHw7TE3CnntuFxoDT). 
 
 <p align="center">
 <img src="/asserts/examples/_MG_0568.jpg" width="150" height="100" /> &ensp; <img src="/asserts/examples/_MG_0569.jpg" width="150" height="100" /> &ensp; <img src="/asserts/examples/_MG_0570.jpg" width="150" height="100" /> 
