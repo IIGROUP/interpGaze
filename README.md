@@ -37,13 +37,13 @@ This is a reproduction and may be slightly different from the original implement
 
 ## Dataset
 
-We contribute a high-quality gaze dataset, which contains a large range of gaze directions and diversity on eye shapes, glasses, ages and genders, to benefit researchers in related areas. Samples are shown in the following pictures. We released the processed gaze patches on [Google Drive](https://drive.google.com/drive/folders/1ZZRcLiBPtfkohSlTHw7TE3CnntuFxoDT). 
+We contribute a high-quality gaze dataset, which contains a large range of gaze directions and diversity on eye shapes, glasses, ages and genders, to benefit researchers in related areas. Samples are shown in the following pictures (more can be found at [link](https://drive.google.com/drive/folders/1uBsmy6N__qiTDJG0wNmOtjTU7M_OHZOt)). 
 
 <p align="center">
 <img src="/asserts/examples/_MG_0568.jpg" width="150" height="100" /> &ensp; <img src="/asserts/examples/_MG_0569.jpg" width="150" height="100" /> &ensp; <img src="/asserts/examples/_MG_0570.jpg" width="150" height="100" /> 
 </p>
 
-We will release the dataset in the future.
+~~We will release the dataset in the future.~~ We have released the processed gaze patches on [Google Drive](https://drive.google.com/drive/folders/1ZZRcLiBPtfkohSlTHw7TE3CnntuFxoDT). 
 
 The comparison of some popular gaze datasets is shown in the following table.
 
