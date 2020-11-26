@@ -5,7 +5,7 @@
 
 Authors: Weihao Xia, Yujiu Yang, Jing-Hao Xue, Wensen Feng
 
-Contact: weihaox@outlook.com
+Contact: weihaox AT outlook.com
 
 In this work, we present a novel method that works on both precise redirection and continuous interpolation. With the well-disentangled and hierarchically-organized latent space, we can adjust the order and strength of each attribute by altering the additional control vector. Furthermore, we contribute a high-quality gaze dataset, which contains a large range of gaze directions, to benefit researchers in related areas. 
 
