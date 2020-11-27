@@ -9,6 +9,8 @@ Contact: weihaox AT outlook.com
 
 In this work, we present a novel method that works on both precise redirection and continuous interpolation. With the well-disentangled and hierarchically-organized latent space, we can adjust the order and strength of each attribute by altering the additional control vector. Furthermore, we contribute a high-quality gaze dataset, which contains a large range of gaze directions, to benefit researchers in related areas. 
 
+[![interpGaze](https://res.cloudinary.com/marcomontalbano/image/upload/v1606474939/video_to_markdown/images/youtube--wnM6cs5PXxk-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=wnM6cs5PXxk "interpGaze")
+
 This is a reproduction and may be slightly different from the original implementaion. If you found any problems including codes and processed data, please feel free to [pull requests](https://github.com/weihaox/InterpGaze/pulls) or [open issues](https://github.com/weihaox/InterpGaze/issues/new).
 
 <details>
