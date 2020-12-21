@@ -3,13 +3,13 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/made%20with-python-blue.svg?style=flat-square)](https://www.python.org/)
 
-Authors: Weihao Xia, Yujiu Yang, Jing-Hao Xue, Wensen Feng
+Authors: Weihao Xia, Yujiu Yang, Jing-Hao Xue, and Wensen Feng
 
 Contact: weihaox AT outlook.com
 
 In this work, we present a novel method that works on both precise redirection and continuous interpolation. With the well-disentangled and hierarchically-organized latent space, we can adjust the order and strength of each attribute by altering the additional control vector. Furthermore, we contribute a high-quality gaze dataset, which contains a large range of gaze directions, to benefit researchers in related areas. 
 
-[![interpGaze](https://res.cloudinary.com/marcomontalbano/image/upload/v1606474939/video_to_markdown/images/youtube--wnM6cs5PXxk-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=wnM6cs5PXxk "interpGaze")
+[![interpGaze](https://res.cloudinary.com/marcomontalbano/image/upload/v1606474939/video_to_markdown/images/youtube--wnM6cs5PXxk-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/Tis7YecUH34 "interpGaze")
 
 This is a reproduction and may be slightly different from the original implementaion. If you found any problems including codes and processed data, please feel free to [pull requests](https://github.com/weihaox/InterpGaze/pulls) or [open issues](https://github.com/weihaox/InterpGaze/issues/new).
 
@@ -59,7 +59,6 @@ You can directly download the dataset processed by [HzDmS](https://github.com/Hz
 
 "We first run face alignment with dlib by parsing the face with 68 facial landmark points. After that, a minimal enclosed circle with center(x, y) and radius R was extracted from the 6 landmark points of each eye. The cropping region of the eye patch is set as a square box with center (x, y) and side length 3.4R. We flipped the right eye images horizontally to align with the left eye images. All eye patch images were resized to 64 × 64."
 
-
 ## Baselines
 
 ### He *et al.*
@@ -87,11 +86,23 @@ We provide the dataset, pretrained model of He et.al. and Deepwarp at [BaiduYun]
 
 ## Training
 
-TBD
+Download the dataset and checkpoints, extract at ./dataset and ./checkpoints, then run
+```
+python src/run.py train --data_dir dataset/all  -sp checkpoints/Gaze -bs 128 -gpu 0,1,2,3 --save_dir 'checkpoints/Gaze/'
+```
 
 ## Evaluation
 
-TBD
+For interpolation
+```
+CUDA_VISIBLE_DEVICES=7 python3 src/run.py test_selected_curve -mp checkpoints/Gaze -sp results/interpolation
+```
+For redirection
+```
+CUDA_VISIBLE_DEVICES=7 python3 src/run.py attribute_manipulation -mp checkpoints/Gaze -sp results/redirection  --filter_target_attr 0P -s 1 --branch_idx 0 --n_ref 1 -bs 1
+```
+
+Notice: This is a reproduction (the original implementation was lost after my graduation) and may be slightly different from the results reported in the paper. I will do some verification and extensively refactoring within the next weeks. 
 
 ## Experiments
 
