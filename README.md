@@ -102,7 +102,7 @@ For redirection
 CUDA_VISIBLE_DEVICES=7 python3 src/run.py attribute_manipulation -mp checkpoints/Gaze -sp results/redirection  --filter_target_attr 0P -s 1 --branch_idx 0 --n_ref 1 -bs 1
 ```
 
-Notice: This is a reproduction (the original implementation was lost after my graduation) and may be slightly different from the results reported in the paper. I will do some verification and extensively refactoring within the next weeks. 
+> **NOTE**: This is a reproduction (the original implementation was lost after my graduation) and may be slightly different from the results reported in the paper. Part of this code is still subject to a few more cleaning updates -- I am still wrapping up sanity checks after refactoring and fixing potential bugs. I will do some verification and extensively refactoring within the next few weeks. 
 
 ## Experiments
 
