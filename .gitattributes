@@ -1,2 +1,4 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+# mark iPython notebooks as Python files
+*.ipynb linguist-language=Python
